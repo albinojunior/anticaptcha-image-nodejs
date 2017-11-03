@@ -5,14 +5,14 @@ const Anticaptcha = require('anticaptcha-nodejs');
 
 var Captcha = () => {
 
-    let anticaptcha = new Anticaptcha('YOUR_CLIENT_KEY_HERE!'); //You anticaptcha account key 
-
     /**
-     *
+     * @param clientKey
      * @param imageBody64
      * @returns {*}
      */
-    let getResult = (imageBody64) => {
+    let getResult = (clientKey, imageBody64) => {
+        
+    let anticaptcha = new Anticaptcha(clientKey); //YOU ACCOUNT KEY HERE
 
         return new Promise((resolve, reject) => {
 
@@ -28,7 +28,7 @@ var Captcha = () => {
                 if (balance > 0) {
                     anticaptcha.createImageToTextTask({
                         case: true,
-                        body: imageBody64 //IMAGE_BODY64_HERE
+                        body: imageBody64 //IMAGE BODY64 HERE
                     },
                     (err, taskId) => {
                         if (err) {
