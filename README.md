@@ -7,7 +7,7 @@ $ npm install anticaptcha-nodejs --save
 ## Example: 
 ```js
 anticaptcha
-.execute("IMAGE_BODY64_HERE")
+.execute("YOUR_CLIENT_KEY_HERE", "IMAGE_BODY64_HERE")
 .then(function(result){
 	console.log(result);
 });
