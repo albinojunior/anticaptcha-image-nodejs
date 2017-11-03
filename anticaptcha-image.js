@@ -7,10 +7,10 @@ var Captcha = () => {
 
     /**
      * @param clientKey
-     * @param imageBody64
+     * @param imageBase64
      * @returns {*}
      */
-    let getResult = (clientKey, imageBody64) => {
+    let getResult = (clientKey, imageBase64) => {
         
     let anticaptcha = new Anticaptcha(clientKey); //YOU ACCOUNT KEY HERE
 
@@ -28,7 +28,7 @@ var Captcha = () => {
                 if (balance > 0) {
                     anticaptcha.createImageToTextTask({
                         case: true,
-                        body: imageBody64 //IMAGE BODY64 HERE
+                        body: imageBase64 //IMAGE BASE64 HERE
                     },
                     (err, taskId) => {
                         if (err) {
