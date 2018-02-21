@@ -1,14 +1,16 @@
 # anticaptcha-image-nodejs
 
+  [![NPM Version][npm-image]][npm-url]
+  [![NPM Downloads][downloads-image]][downloads-url]
+  
 ```
-$ npm install bluebird --save
-$ npm install anticaptcha-nodejs --save
+$ npm i --save anticaptcha-image-nodejs
 ```
 ## Example: 
 ```js
 anticaptcha
 .getResult("YOUR_CLIENT_KEY_HERE", "IMAGE_BASE64_HERE")
-.then(function(result){
+.then((result) => {
 	console.log(result);
 });
 ```

@@ -1,0 +1,28 @@
+{
+  "name": "anticaptcha-image-nodejs",
+  "version": "1.0.0",
+  "description": "Anticaptcha image for nodeJS",
+  "main": "anticaptcha-image.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/albinojunior/anticaptcha-image-nodejs.git"
+  },
+  "keywords": [
+    "anticaptcha",
+    "node",
+    "image-anticaptcha"
+  ],
+  "author": "Albino Júnior",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/albinojunior/anticaptcha-image-nodejs/issues"
+  },
+  "homepage": "https://github.com/albinojunior/anticaptcha-image-nodejs#readme",
+  "dependencies": {
+    "anticaptcha-nodejs": "^1.0.1",
+    "bluebird": "^3.5.1"
+  }
+}
