@@ -1,7 +1,4 @@
 # anticaptcha-image-nodejs
-
-  [![NPM Version][npm-image]][npm-url]
-  [![NPM Downloads][downloads-image]][downloads-url]
   
 ```
 $ npm i --save anticaptcha-image-nodejs
