@@ -1,6 +1,6 @@
 "use strict";
 
-const Anticaptcha = require('./anticaptcha-image.js');
+const Anticaptcha = require('./index.js');
 
 var anticaptcha = new Anticaptcha();
 
